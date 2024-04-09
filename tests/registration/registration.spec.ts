@@ -15,7 +15,7 @@ test.describe('Registration of a user', async () => {
         await test.step('Switch to registration page', async () => {
             await page.locator('a[href="/auth/signup"]').click();
 
-            expect(await page.locator('h1').textContent()).toBe('Sign Up');
+            await page.locator('h1', { hasText: 'Sign Up' }).waitFor();
         });
 
         await test.step('Fill all required inputs', async () => {
