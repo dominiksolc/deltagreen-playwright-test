@@ -1,1 +1,0 @@
-# deltagreen-playwright-test
