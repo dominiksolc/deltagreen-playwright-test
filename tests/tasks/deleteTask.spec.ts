@@ -5,7 +5,7 @@ import { createAuthInstance, createTask } from '../../helpers/api';
 
 const { baseURL, username, password } = config;
 const data = {
-    name: `test task - ${getTestID}`,
+    name: `test task - ${getTestID()}`,
     description: 'created by test with api',
 };
 
